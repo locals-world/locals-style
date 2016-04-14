@@ -1,0 +1,172 @@
+<!--
+@license
+Copyright (c) 2016 A-labs. All rights reserved.
+/////////////////
+LOCALS
+/////////////////
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+
+<style is="custom-style">
+
+
+    @font-face {
+      font-family: Opensanslight;
+      src: url(locals-fonts/OpenSans-Light.ttf);
+    }
+
+    @font-face {
+      font-family: Opensans;
+      src: url(locals-fonts/OpenSans-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: Opensanssemibold;
+      src: url(locals-fonts/OpenSans-Semibold.ttf);
+    }
+
+    @font-face {
+      font-family: Opensansbold;
+      src: url(locals-fonts/OpenSans-Bold.ttf);
+    }
+
+
+
+  :root {
+    --theme-font-general: {
+      font-family: Opensanslight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
+    };
+
+
+    --theme-font-reg: {
+      font-family: Opensans;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 300;
+    };
+
+    --theme-font-semibold: {
+      font-family: Opensanssemibold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 700;
+    };
+
+    --theme-font-bold: {
+      font-family: Opensansbold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 900;
+    };
+
+    --no-edges: {
+      margin: 0px;
+      padding: 0px;
+    };
+
+
+    --theme-font-h1: {
+      @apply(--theme-font-general);
+      @apply(--theme-font-nowrap);
+      margin: 7px 0px 7px 0px;
+      padding: 0px;
+      font-size: 40px;
+      line-height: 52px;
+    };
+
+    --theme-font-h2: {
+      @apply(--theme-font-reg);
+      @apply(--theme-font-nowrap);
+      margin: 7px 0px 7px 0px;
+      padding: 0px;
+      font-size: 30px;
+      line-height: 34px;
+    };
+
+    --theme-font-h3: {
+      @apply(--theme-font-semibold);
+      @apply(--theme-font-nowrap);
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+      font-size: 22px;
+      line-height: 24px;
+    };
+
+    --theme-font-h4: {
+      @apply(--theme-font-bold);
+      @apply(--theme-font-nowrap);
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+      font-size: 22px;
+      line-height: 26px;
+    };
+
+
+
+    --theme-font-body1: {
+      @apply(--theme-font-general);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      margin: 0px;
+    };
+
+    --theme-font-body2: {
+      @apply(--theme-font-general);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+    };
+
+    --theme-font-menu: {
+      @apply(--theme-font-general);
+      @apply(--theme-font-nowrap);
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+    };
+
+    --theme-font-button: {
+      @apply(--theme-font-general);
+      @apply(--theme-font-nowrap);
+    };
+
+  }
+
+
+
+  h1 {
+    @apply(--theme-font-h1);
+  }
+
+  h2 {
+    @apply(--theme-font-h2);
+  }
+
+  h3 {
+    @apply(--theme-font-h3);
+  }
+
+  h4 {
+    @apply(--theme-font-h4);
+  }
+
+  p {
+    @apply(--theme-font-body1);
+  }
+
+
+
+
+
+
+  .semibold {
+      @apply(--theme-font-semibold);
+  }
+
+  .bold {
+      @apply(--theme-font-bold);
+  }
+
+
+</style>
