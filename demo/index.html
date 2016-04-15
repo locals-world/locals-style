@@ -32,18 +32,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .whitespace {
         height: 20px;
       }
-      h1 { @apply(--theme-font-h1); };
-      h2 { @apply(--theme-font-h2); };
-      h3 { @apply(--theme-font-h3); };
-      h4 { @apply(--theme-font-h4); };
-      p { @apply(--theme-font-body1); };
+
+      .localsh1 {
+        color: var(--locals-red);
+      }
+
+
     </style>
 
   </head>
   <body>
 
     <!--     <locals-style></locals-style> -->
+
   <div class="democanvas">
+  <div class="localsgeneraltypo">
 
     <h1>This is a Locals h1 title.</h1>
     <h2>This is a Locals h2 title.</h2>
@@ -91,6 +94,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <h2>var(--locals-grey)</h2>
       <p>Use the var to use this color or use class '.greyback' to use this color in the background.</p> 
     </div>
+  </div>
 
   </div>
   </body>
