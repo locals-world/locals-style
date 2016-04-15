@@ -34,67 +34,67 @@ LOCALS
 
 
   :root {
-    --theme-font-general: {
+    --opensans-light: {
       font-family: Opensanslight;
       -webkit-font-smoothing: antialiased;
       font-weight: 100;
     };
 
-
-    --theme-font-reg: {
+    --opensans-reg: {
       font-family: Opensans;
       -webkit-font-smoothing: antialiased;
       font-weight: 300;
     };
 
-    --theme-font-semibold: {
+    --opensans-semibold: {
       font-family: Opensanssemibold;
       -webkit-font-smoothing: antialiased;
       font-weight: 700;
     };
 
-    --theme-font-bold: {
+    --opensans-bold: {
       font-family: Opensansbold;
       -webkit-font-smoothing: antialiased;
       font-weight: 900;
     };
 
-    --no-edges: {
-      margin: 0px;
-      padding: 0px;
+    --locals-font-nowrap: {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     };
 
 
-    --theme-font-h1: {
-      @apply(--theme-font-general);
-      @apply(--theme-font-nowrap);
+    --locals-font-h1: {
+      @apply(--opensans-light);
+      @apply(--locals-font-nowrap);
       margin: 7px 0px 7px 0px;
       padding: 0px;
       font-size: 40px;
       line-height: 52px;
     };
 
-    --theme-font-h2: {
-      @apply(--theme-font-reg);
-      @apply(--theme-font-nowrap);
+    --locals-font-h2: {
+      @apply(--opensans-reg);
+      @apply(--locals-font-nowrap);
       margin: 7px 0px 7px 0px;
       padding: 0px;
       font-size: 30px;
       line-height: 34px;
     };
 
-    --theme-font-h3: {
-      @apply(--theme-font-semibold);
-      @apply(--theme-font-nowrap);
+    --locals-font-h3: {
+      @apply(--opensans-semibold);
+      @apply(--locals-font-nowrap);
       margin: 10px 0px 10px 0px;
       padding: 0px;
       font-size: 22px;
       line-height: 24px;
     };
 
-    --theme-font-h4: {
-      @apply(--theme-font-bold);
-      @apply(--theme-font-nowrap);
+    --locals-font-h4: {
+      @apply(--opensans-bold);
+      @apply(--locals-font-nowrap);
       margin: 10px 0px 10px 0px;
       padding: 0px;
       font-size: 22px;
@@ -103,49 +103,43 @@ LOCALS
 
 
 
-    --theme-font-body1: {
-      @apply(--theme-font-general);
+    --locals-font-body1: {
+      @apply(--opensans-light);
       font-size: 18px;
       font-weight: 300;
       line-height: 24px;
       margin: 0px;
     };
 
-    --theme-font-body2: {
-      @apply(--theme-font-general);
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 30px;
-    };
 
-    --theme-font-menu: {
-      @apply(--theme-font-general);
-      @apply(--theme-font-nowrap);
+    --locals-font-menu: {
+      @apply(--opensans-light);
+      @apply(--locals-font-nowrap);
       font-size: 13px;
       font-weight: 500;
       line-height: 24px;
     };
 
-    --theme-font-button: {
-      @apply(--theme-font-general);
-      @apply(--theme-font-nowrap);
+    --locals-font-button: {
+      @apply(--opensans-light);
+      @apply(--locals-font-nowrap);
     };
 
   }
 
   .localsgeneraltypo h1 {
-    @apply(--theme-font-h1);
+    @apply(--locals-font-h1);
   }
   .localsgeneraltypo h2 {
-    @apply(--theme-font-h2);
+    @apply(--locals-font-h2);
   }
   .localsgeneraltypo h3 {
-    @apply(--theme-font-h3);
+    @apply(--locals-font-h3);
   }
   .localsgeneraltypo h4 {
-    @apply(--theme-font-h4);
+    @apply(--locals-font-h4);
   }
   .localsgeneraltypo p {
-    @apply(--theme-font-body1);
+    @apply(--locals-font-body1);
   }
 </style>
