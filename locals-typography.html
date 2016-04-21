@@ -158,24 +158,17 @@ LOCALS
       @apply(--locals-font-nowrap);
     };
     
-    --locals-typo: {
+/*    --locals-typo: {
       @apply(--locals-font-h1);
       @apply(--locals-font-h2);
       @apply(--locals-font-h3);
       @apply(--locals-font-h4);
       @apply(--locals-font-p);
-    };
-
-    --locals-canvas: {
-      width: 100vw;
-      box-sizing: border-box;
-      padding: 5vh 5vw 5vh 5vw;
-    };
-
+    };*/
 
   }
 
-  .localstypo h1 {
+/*  .localstypo h1 {
     @apply(--locals-font-h1);
   }
   .localstypo h2 {
@@ -189,5 +182,14 @@ LOCALS
   }
   .localstypo p {
     @apply(--locals-font-body1);
+  }*/
+
+  .localstypo {
+    @apply(--locals-font-h1);
+    @apply(--locals-font-h2);
+    @apply(--locals-font-h3);
+    @apply(--locals-font-h4);
+    @apply(--locals-font-body1);
   }
+
 </style>
